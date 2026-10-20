@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d35">
+  <title>Furina Art Collection Centre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Furina Art Collection Centre home">
+      <span class="brand-mark">✦</span>
+      <span>
+        <span class="eyebrow">A personal digital museum</span>
+        <span class="brand-name">Furina Art Collection Centre</span>
+      </span>
+    </a>
+    <a class="header-link" href="#collection">Enter the gallery ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE GRAND COLLECTION</p>
+        <h1>Every drawing<br>has a <em>story.</em></h1>
+        <p class="hero-description">
+          A growing archive devoted to Furina — portraits, sketches, studies,
+          and little moments worth keeping.
+        </p>
+        <a class="primary-button" href="#collection">Explore the collection <span>↓</span></a>
+        <div class="hero-meta">
+          <span><strong id="art-count">0</strong> catalogued works</span>
+          <span>Curated by Horizon Finder 25</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative gallery artwork frame">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="star star-one">✦</div>
+        <div class="star star-two">✧</div>
+        <div class="hero-frame">
+          <div class="frame-inner">
+            <span class="frame-crown">♕</span>
+            <span class="frame-title">FURINA</span>
+            <span class="frame-subtitle">THE STAR OF THE SHOW</span>
+            <span class="frame-flourish">❦</span>
+          </div>
+        </div>
+        <p class="hero-art-caption">ARCHIVE · FCAC</p>
+      </div>
+    </section>
+
+    <section class="collection-section" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE ARCHIVE</p>
+          <h2>Collected works</h2>
+          <p class="section-description">A catalogue of Furina drawings, one piece at a time.</p>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Search the collection…" aria-label="Search artworks">
+        </label>
+      </div>
+
+      <div class="filter-row" aria-label="Artwork filters">
+        <button class="filter-button active" data-filter="All">All works</button>
+        <button class="filter-button" data-filter="Portrait">Portraits</button>
+        <button class="filter-button" data-filter="Sketch">Sketches</button>
+        <button class="filter-button" data-filter="Digital">Digital</button>
+        <button class="filter-button" data-filter="Traditional">Traditional</button>
+      </div>
+
+      <div class="art-grid" id="art-grid">
+        <!--
+          TO ADD A DRAWING:
+          1. Put the image in the images folder.
+          2. Copy one article card below.
+          3. Change the image filename, title, category, and artwork ID.
+          Example: images/furina-001.jpg
+        -->
+        <article class="art-card" data-title="Furina — No. 001" data-category="Portrait">
+          <button class="art-image image-placeholder" data-image="images/furina-001.jpg" aria-label="Open Furina — No. 001">
+            <span class="placeholder-symbol">✧</span><span class="placeholder-label">ADD IMAGE 001</span>
+          </button>
+          <div class="art-info"><div><p class="art-id">FCAC · 001</p><h3>Furina — No. 001</h3></div><span class="category">Portrait</span></div>
+        </article>
+        <article class="art-card" data-title="A Quiet Moment" data-category="Sketch">
+          <button class="art-image image-placeholder" data-image="images/furina-002.jpg" aria-label="Open A Quiet Moment">
+            <span class="placeholder-symbol">✦</span><span class="placeholder-label">ADD IMAGE 002</span>
+          </button>
+          <div class="art-info"><div><p class="art-id">FCAC · 002</p><h3>A Quiet Moment</h3></div><span class="category">Sketch</span></div>
+        </article>
+        <article class="art-card" data-title="The Hydro Archon" data-category="Traditional">
+          <button class="art-image image-placeholder" data-image="images/furina-003.jpg" aria-label="Open The Hydro Archon">
+            <span class="placeholder-symbol">❦</span><span class="placeholder-label">ADD IMAGE 003</span>
+          </button>
+          <div class="art-info"><div><p class="art-id">FCAC · 003</p><h3>The Hydro Archon</h3></div><span class="category">Traditional</span></div>
+        </article>
+        <article class="art-card" data-title="Curtain Call" data-category="Digital">
+          <button class="art-image image-placeholder" data-image="images/furina-004.jpg" aria-label="Open Curtain Call">
+            <span class="placeholder-symbol">✧</span><span class="placeholder-label">ADD IMAGE 004</span>
+          </button>
+          <div class="art-info"><div><p class="art-id">FCAC · 004</p><h3>Curtain Call</h3></div><span class="category">Digital</span></div>
+        </article>
+        <article class="art-card" data-title="Blue Hour" data-category="Sketch">
+          <button class="art-image image-placeholder" data-image="images/furina-005.jpg" aria-label="Open Blue Hour">
+            <span class="placeholder-symbol">✦</span><span class="placeholder-label">ADD IMAGE 005</span>
+          </button>
+          <div class="art-info"><div><p class="art-id">FCAC · 005</p><h3>Blue Hour</h3></div><span class="category">Sketch</span></div>
+        </article>
+        <article class="art-card" data-title="The Star of the Show" data-category="Portrait">
+          <button class="art-image image-placeholder" data-image="images/furina-006.jpg" aria-label="Open The Star of the Show">
+            <span class="placeholder-symbol">♕</span><span class="placeholder-label">ADD IMAGE 006</span>
+          </button>
+          <div class="art-info"><div><p class="art-id">FCAC · 006</p><h3>The Star of the Show</h3></div><span class="category">Portrait</span></div>
+        </article>
+      </div>
+      <p class="empty-message" id="empty-message" hidden>No artworks match that search.</p>
+      <p class="collection-note">More works will be added to the archive as the collection grows.</p>
+    </section>
+
+    <section class="curator-note">
+      <span class="note-icon">✧</span>
+      <div><p class="eyebrow">A NOTE FROM THE CURATOR</p><p>“A collection is more than the sum of its pieces. It is a record of attention, imagination, and time.”</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>FURINA ART COLLECTION CENTRE</span>
+    <span>Made with care by Horizon Finder 25 · Unofficial fan archive</span>
+  </footer>
+
+  <dialog id="art-viewer" class="viewer">
+    <button class="viewer-close" id="viewer-close" aria-label="Close artwork">×</button>
+    <img id="viewer-image" src="" alt="Selected Furina artwork">
+    <p id="viewer-caption"></p>
+  </dialog>
+
+  <script>
+    const cards = [...document.querySelectorAll('.art-card')];
+    const search = document.getElementById('search');
+    const filterButtons = [...document.querySelectorAll('.filter-button')];
+    const emptyMessage = document.getElementById('empty-message');
+    const artCount = document.getElementById('art-count');
+    let activeFilter = 'All';
+
+    function updateGallery() {
+      const term = search.value.trim().toLowerCase();
+      let visible = 0;
+      cards.forEach(card => {
+        const matchesText = card.dataset.title.toLowerCase().includes(term);
+        const matchesFilter = activeFilter === 'All' || card.dataset.category === activeFilter;
+        const show = matchesText && matchesFilter;
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      artCount.textContent = cards.length;
+      emptyMessage.hidden = visible !== 0;
+    }
+
+    search.addEventListener('input', updateGallery);
+    filterButtons.forEach(button => button.addEventListener('click', () => {
+      activeFilter = button.dataset.filter;
+      filterButtons.forEach(item => item.classList.toggle('active', item === button));
+      updateGallery();
+    }));
+
+    const viewer = document.getElementById('art-viewer');
+    const viewerImage = document.getElementById('viewer-image');
+    const viewerCaption = document.getElementById('viewer-caption');
+    document.querySelectorAll('.art-image').forEach(button => {
+      const path = button.dataset.image;
+      const image = new Image();
+      image.onload = () => {
+        button.classList.remove('image-placeholder');
+        button.textContent = '';
+        button.appendChild(image);
+        image.alt = button.getAttribute('aria-label');
+      };
+      image.onerror = () => {};
+      image.src = path;
+      button.addEventListener('click', () => {
+        if (!image.complete || !image.naturalWidth) return;
+        viewerImage.src = path;
+        viewerImage.alt = button.getAttribute('aria-label');
+        viewerCaption.textContent = button.closest('.art-card').dataset.title;
+        viewer.showModal();
+      });
+    });
+    document.getElementById('viewer-close').addEventListener('click', () => viewer.close());
+    viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
+    updateGallery();
+  </script>
+</body>
+</html>
